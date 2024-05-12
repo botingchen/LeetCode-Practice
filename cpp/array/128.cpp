@@ -11,7 +11,7 @@ public:
             if(!set.contains(num-1)){
                 y = num + 1;
                 while(set.contains(y)){
-                    cout<<y;
+                    cout<<y; 
                     y++;
                 }
                 ans = max(ans, y-num);
