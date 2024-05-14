@@ -1,3 +1,4 @@
+#store # of most frequent letter
 import collections
 s, k = input().split()
 k = int(k)
