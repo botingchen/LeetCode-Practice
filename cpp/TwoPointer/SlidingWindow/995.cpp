@@ -8,10 +8,9 @@ public:
 
         for (int i = 0; i < n; ++i) {
             if (i >= k) {
-                // if(isFlipped[i - k] = 1 && flipped == 1){
-                //     flipped = 0;
-                // }
-                flipped ^= isFlipped[i - k];
+                if(isFlipped[i - k] == 1){
+                    flipped = flipped == 1? 0:1;    // exceed range k, erase the effect of flipped
+                }
             }
             if (flipped == nums[i]) {
                 if (i + k > n) {
